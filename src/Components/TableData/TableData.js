@@ -13,7 +13,7 @@ const TableData = () => {
                 <table className="table table-border  text-bold text-white"  >
                     <thead>
                         <tr>
-
+                            {/* Table Heading */}
                             <th scope="col">Page</th>
                             <th scope="col">Image</th>
                             <th scope="col">Project</th>
@@ -25,12 +25,13 @@ const TableData = () => {
                         </tr>
                     </thead>
 
-
                     {
                         manageData?.map((pd) =>
 
                             <tbody key={pd._id}>
                                 <tr>
+                                    {/* Table realtime data */}
+
                                     <td className='text-nowrap'>{pd?.Pagenumber}</td>
                                     <td><img width="50" height="50" className=" rounded-pill border-0" src={pd?.image} alt="" />  </td>
                                     <td className='text-nowrap'>{pd?.projectname}</td>
@@ -38,6 +39,7 @@ const TableData = () => {
                                     <td className='text-nowrap'>{pd?.Panelname}</td>
                                     <td className='text-nowrap'>{pd?.Screenname}</td>
                                     <td className='text-nowrap'>{pd?.Eventsname}</td>
+
                                 </tr>
                             </tbody>
 
@@ -45,13 +47,8 @@ const TableData = () => {
 
                     }
 
-
-
-
                 </table>
-
             </div>
-
         </div>
     );
 };
