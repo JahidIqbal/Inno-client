@@ -9,7 +9,7 @@ const AddData = () => {
     const onSubmit = data => {
         console.log(data)
 
-        axios.post('http://localhost:5000/users', data)
+        axios.post('https://secure-beach-40201.herokuapp.com/users', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

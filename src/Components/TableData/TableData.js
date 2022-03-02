@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const TableData = () => {
     const [manageData, setManageData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://secure-beach-40201.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setManageData(data))
     }, [])
